@@ -85,5 +85,5 @@ app.post("/", async (c) => {
 
 serve({
   fetch: app.fetch,
-  port: process.env.PORT,
+  port: process.env.PORT || 3000,
 });
